@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "deploy": "npm run build && gh-pages -d out"
+    "deploy": "npm run build && touch out/.nojekyll && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "@base-ui/react": "^1.6.0",
