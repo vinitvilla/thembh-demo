@@ -3,6 +3,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
+import { getImagePath } from "@/lib/utils";
 
 export function StorySection() {
   const ref = useRef(null);
@@ -30,7 +31,7 @@ export function StorySection() {
       </div>
 
       <motion.div style={{ y: ingredientsY }} className="absolute inset-0 pointer-events-none z-0 opacity-40">
-        <Image src="/images/ingredients.png" alt="Raw Ingredients" fill className="object-cover" />
+        <Image src={getImagePath("/images/ingredients.png")} alt="Raw Ingredients" fill className="object-cover" />
       </motion.div>
     </section>
   );

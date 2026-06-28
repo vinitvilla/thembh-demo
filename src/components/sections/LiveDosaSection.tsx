@@ -3,12 +3,13 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { getImagePath } from "@/lib/utils";
 
 export function LiveDosaSection() {
   return (
     <section className="relative py-32 bg-foreground text-background overflow-hidden">
       <div className="absolute inset-0 opacity-20">
-        <Image src="/images/dosa.png" alt="Dosa making" fill className="object-cover" />
+        <Image src={getImagePath("/images/dosa.png")} alt="Dosa making" fill className="object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-foreground via-transparent to-foreground" />
       </div>
 

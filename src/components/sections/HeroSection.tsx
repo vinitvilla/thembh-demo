@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useRef, useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Plus, ChevronLeft, ChevronRight } from "lucide-react";
+import { getImagePath } from "@/lib/utils";
 
 const CAROUSEL_ITEMS = [
   {
@@ -13,7 +14,7 @@ const CAROUSEL_ITEMS = [
     subtitle: "DOSA BATTER",
     price: "$10.50",
     tagline: "CLASSIC RICE & LENTIL",
-    image: "/images/tubs_original_1782620341860.png",
+    image: getImagePath("/images/tubs_original_1782620341860.png"),
   },
   {
     id: 2,
@@ -21,7 +22,7 @@ const CAROUSEL_ITEMS = [
     subtitle: "DOSA BATTER",
     price: "$12.50",
     tagline: "MULTI-GRAIN BLEND",
-    image: "/images/tubs_millet_1782620350328.png",
+    image: getImagePath("/images/tubs_millet_1782620350328.png"),
   },
   {
     id: 3,
@@ -29,7 +30,7 @@ const CAROUSEL_ITEMS = [
     subtitle: "DOSA BATTER",
     price: "$11.50",
     tagline: "RICH IN IRON",
-    image: "/images/tubs_ragi_1782620359502.png",
+    image: getImagePath("/images/tubs_ragi_1782620359502.png"),
   },
 ];
 
